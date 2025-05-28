@@ -1,0 +1,213 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Lora:wght@400&family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+
+/* General Styles */
+body {
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FAF3E0;
+    color: #2E3D30;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Header and Navbar */
+header {
+    background: #5E0B15;
+    color: #E3CDA8;
+    padding: 30px 40px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between; /* Ensures left and right alignment */
+    align-items: center;
+    transition: top 0.3s ease-in-out; 
+    z-index: 1000;
+}
+
+/* Logo / Brand Name */
+.logo {
+    font-family: 'Great Vibes', cursive;
+    font-size: 45px;
+    font-weight: bold;
+    color: #E3CDA8; /* Deeper Cream */
+    text-decoration: none;
+}
+
+/* Navbar */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    padding-right: 80px;
+}
+
+nav ul li {
+    margin-left: 40px; /* Space between items */
+}
+
+nav ul li a {
+    color: #FAF3E0;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Playfair Display', serif;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #D4AF37; /* Gold hover effect */
+}
+
+/* Sticky Navbar Effect */
+.scrolled {
+    background: #8B0000; /* Solid when scrolling */
+}
+
+/* About Me Section */
+.about-section {
+    padding: 140px 20px 60px;
+    text-align: center;
+    background-color: #f8f4f1;
+    font-family: 'Playfair Display', serif;
+    position: relative;
+    z-index: 10; /* Ensure it appears above other content */
+}
+
+.about-section h2 {
+    font-size: 3rem;
+    color:#5E0B15; /* Deep wine red */
+    margin-bottom: 40px; /* Adjusted for better spacing */
+    font-weight: bold;
+    font-family: 'Great Vibes', cursive;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.about-img {
+    width: 350px;  /* Adjusted size for better visibility */
+    height: 400px; /* Adjusted size for better visibility */
+    border-radius: 10%;
+    object-fit: center;
+    border: 5px solid #5E0B15; /* Deep wine red */
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.15);
+    display: block;
+    margin: 0px auto; /* Center the image horizontally */
+}
+
+/* About Text Section */
+.about-text {
+    font-size: 1.5rem;
+    color: #2E3D30; /* Dark gray for elegance */
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.about-text button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #6A1B4D;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.about-text button:hover {
+    background-color: #8B0000;
+}
+
+
+/* Fun Fact Images */
+.fun-fact-img {
+    width: 300px;  /* Adjust size to fit multiple images */
+    height: 400px; /* Adjust size to fit multiple images */
+    border-radius: 50%;
+    object-fit: center;
+    margin: 20px;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.15);
+    display: inline-block; /* Display images in a row */
+}
+
+/* Style to display images in a row */
+#funFactImages {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Wrap images to new rows if needed */
+    gap: 20px;  /* Space between the images */
+    margin-top: 20px;
+}
+
+/* Hide the images and fun fact text initially */
+.hidden {
+    display: none !important;
+}
+
+  
+/* Footer Styles */
+footer {
+    background-color: #5E0B15; /* Deep red background */
+    color: #E3CDA8; /* Cream text */
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.contact-info a {
+    color: #E3CDA8;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.contact-info a:hover {
+    color: #D4AF37; /* Gold hover effect */
+}
+
+
+/* Social Media Icons */
+.social-media {
+    margin-top: 15px;
+}
+
+.social-media a {
+    font-size: 1.5rem;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-media i {
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-media a:hover i {
+    transform: scale(1.2); /* Slight zoom effect on hover */
+}
+  

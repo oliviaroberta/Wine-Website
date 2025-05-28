@@ -1,0 +1,176 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Lora:wght@400&family=Great+Vibes&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FAF3E0;
+    color: #2E3D30;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+    padding-top: 120px; /* Ensures content doesn't hide under fixed header */
+}
+
+/* Header and Navbar */
+header {
+    background: #5E0B15;
+    color: #E3CDA8;
+    padding: 20px 40px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: top 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+/* Logo / Brand Name */
+.logo {
+    font-family: 'Great Vibes', cursive;
+    font-size: 45px;
+    font-weight: bold;
+    color: #E3CDA8;
+    text-decoration: none;
+}
+
+/* Navbar */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    padding-right: 80px;
+}
+
+nav ul li {
+    margin-left: 40px;
+}
+
+nav ul li a {
+    color: #FAF3E0;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Playfair Display', serif;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #D4AF37;
+}
+
+/* Sticky Navbar Effect */
+.scrolled {
+    background: #8B0000;
+}
+
+/* Intro Section */
+.video-Page{
+    font-size: 1.5rem;
+    color: #2E3D30;
+    font-style: italic;
+    margin: 30px auto 30px; /* Add top margin to push it below the header */
+    line-height: 1.6;
+    max-width: 800px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+/* Signature Sentence */
+.signature {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5rem;
+    color: #2E3D30;
+    margin-top: 5px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+/* Decorative Line */
+.decorative-line {
+    border: none;
+    height: 2px;
+    background-color: #5E0B15;
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* Video Page Heading */
+.video-page h2 {
+    font-size: 2.5rem;
+    margin: 70px auto 50px; /* Added margin-top: 70px */
+    color: #8B0000;
+    padding-top: 70px;
+}
+
+/* Video Section */
+.video-section {
+    margin-bottom: 120px;
+}
+
+video {
+    width: 30%;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Video Caption */
+.caption {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    margin-top: 10px;
+    color: #2E3D30;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #5E0B15;
+    color: #E3CDA8;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.contact-info a {
+    color: #E3CDA8;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.contact-info a:hover {
+    color: #D4AF37;
+}
+
+/* Social Media Icons */
+.social-media {
+    margin-top: 15px;
+}
+
+.social-media a {
+    font-size: 1.5rem;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-media i {
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-media a:hover i {
+    transform: scale(1.2);
+}

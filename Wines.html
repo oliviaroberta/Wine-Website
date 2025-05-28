@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wines - Le Château du Vin</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Lora:wght@400&family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body style="font-family: 'Lora', serif; background-color: #FAF3E0; color: #2E3D30; text-align: center; margin: 0; padding: 0;">
+
+    <!-- Header -->
+    <header style="background: #5E0B15; color: #E3CDA8; padding: 30px 40px; position: fixed; width: 100%; top: 0; left: 0; display: flex; justify-content: space-between; align-items: center;  transition: top 0.3s ease-in-out; z-index: 1000;">
+        <a style="font-family: 'Great Vibes', cursive ; font-size: 45px; font-weight: bold; color: #E3CDA8; text-decoration: none; ">Le Château du Vin</a>
+        <nav>
+            <ul style="list-style: none; padding: 0; margin: 0; display: flex; padding-right: 80px;">
+                <li style="margin-left: 40px;">
+                    <a href="index.html" style="color: #FAF3E0; text-decoration: none; font-size: 18px; font-family: 'Lora', serif;" 
+                       onmouseover="this.style.color='#D4AF37'" onmouseout="this.style.color='#FAF3E0'">Home</a>
+                </li>
+                <li style="margin-left: 40px;">
+                    <a href="Wines.html" style="color: #FAF3E0; text-decoration: none; font-size: 18px; font-family: 'Lora', serif;" 
+                       onmouseover="this.style.color='#D4AF37'" onmouseout="this.style.color='#FAF3E0'">Wines</a>
+                </li>
+                <li style="margin-left: 40px;">
+                    <a href="Audio Experience.html" style="color: #FAF3E0; text-decoration: none; font-size: 18px; font-family: 'Lora', serif;" 
+                       onmouseover="this.style.color='#D4AF37'" onmouseout="this.style.color='#FAF3E0'">Audio Experience</a>
+                </li>
+                <li style="margin-left: 40px;">
+                    <a href="Cinematic Elegance.html" style="color: #FAF3E0; text-decoration: none; font-size: 18px; font-family: 'Lora', serif;" 
+                       onmouseover="this.style.color='#D4AF37'" onmouseout="this.style.color='#FAF3E0'">Cinematic Elegance</a>
+                </li>
+                <li style="margin-left: 40px;">
+                    <a href="About Me.html" style="color: #FAF3E0; text-decoration: none; font-size: 18px; font-family: 'Lora', serif;" 
+                       onmouseover="this.style.color='#D4AF37'" onmouseout="this.style.color='#FAF3E0'">About</a>
+                </li>
+                 <li style= "margin-left:40px;"> 
+                   <a href="register.html" style="color: #FAF3E0; text-decoration: none; font-size: 18px; font-family: 'lora',serif;"
+                        onmouseover="this.style.color='#D4AF37'" onmouseout="this.style.color='#FAF3E0'">Register</a>
+                 </li>
+            </ul>
+            
+        </nav>
+    </header>
+
+    <!-- Wine Section -->
+    <section class="wines-section" style="background-color: #FAF3E0; color: #2E3D30; padding: 100px 20px; text-align: center;">
+        <h2 style="font-family: 'Playfair Display', serif; font-size: 3rem; font-weight: 700; margin-bottom: 20px;">Our Finest Wines</h2>
+        <p style="font-size: 1.25rem; font-family: 'Lora', serif; line-height: 1.8; max-width: 800px; margin: 0 auto;">Indulge in the 
+            exquisite flavors of our finest wines. Each bottle is a testament to our dedication to the art of winemaking and our passion for creating the perfect wine experience.</p>
+            <p style="font-size: 1.25rem; font-family: 'Lora', serif; line-height: 1.8; max-width: 800px; margin: 20px auto;">
+                Whether you're celebrating a special moment, enjoying a quiet evening, or pairing it with your favorite dish, our wines are designed to elevate your experience. 
+                Explore our selection and discover the perfect bottle for every occasion.
+        </section>
+
+        <!-- Stylish French Phrase (Signature) -->
+    <p style="font-family: 'Great Vibes', cursive; font-size: 2.5rem; color: #2E3D30; margin-top: 1px;">
+        "L’art du vin, l’élégance de la vie."
+
+    <hr style="border: none; height: 2px; background-color: #5E0B15; width: 80%; margin: 50px auto;">
+
+    <!-- Wine Gallery -->
+<section class="wine-gallery" style="padding: 30px 20px; background-color: #FAF3E0; text-align: center;">
+    <h2 style="font-family: 'Great Vibes', cursive; font-size: 3rem; font-weight: 800; margin-bottom: 20px; color: #2E3D30;">
+        Explore Our Collection
+    </h2>
+    <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px;">
+        <div class="wine-card" style="width: 250px; height: 500px; overflow: hidden; border-radius: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); cursor: pointer; text-align: center;" 
+            onclick="openModal('Red Wine.png', 'Red Wine','Château Hannetot is a rich and elegant red wine with notes of blackcurrant, plum, and a hint of oak. It pairs well with red meats and aged cheeses. 🍷')">
+            <img src="Red Wine.png" alt="Red Wine" style="width: 90%; height: 80%; object-fit: cover;">
+            <p style="font-size: 1.2rem; font-weight: bold; margin-top: 10px; color: #2E3D30;">Red Wine</p>
+        </div>
+
+        <div class="wine-card" style="width: 250px; height: 500px; overflow: hidden; border-radius: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); cursor: pointer; text-align: center;" 
+            onclick="openModal('White Wine.png', 'White Wine','Dile Moscato is a sweet and refreshing white wine with fruity aromas of peach, apricot, and honey. Perfect for desserts or sipping on a sunny day. 🍷')">
+            <img src="White Wine.png" alt="White Wine" style="width: 90%; height: 80%; object-fit: cover;">
+            <p style="font-size: 1.2rem; font-weight: bold; margin-top: 10px; color: #2E3D30;">White Wine</p>
+        </div>
+
+        <div class="wine-card" style="width: 250px; height: 500px; overflow: hidden; border-radius: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); cursor: pointer; text-align: center;" 
+            onclick="openModal('Rose Wine.png', 'Rosé ', 'Adorada Eau de California is a refreshing rosé wine, with vibrant notes of red berries and a crisp, balanced finish. Perfect for pairing with seafood or enjoying on a sunny day. 🍷')">
+            <img src="Rose Wine.png" alt="Rose Wine" style="width: 90%; height: 80%; object-fit: cover;">
+            <p style="font-size: 1.2rem; font-weight: bold; margin-top: 10px; color: #2E3D30;">Rosé </p>
+        </div>
+
+        <div class="wine-card" style="width: 250px; height: 500px; overflow: hidden; border-radius: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); cursor: pointer; text-align: center;" 
+            onclick="openModal('Sparkling Wine.png', 'Sparkling Wine','Lamarca Sparkling Rosé is a vibrant and crisp sparkling wine with delicate flavors of fresh strawberries and citrus. Its lively bubbles and refreshing acidity make it a perfect choice for celebrations. 🍷')">
+            <img src="Sparkling Wine.png" alt="Sparkling Wine" style="width: 90%; height: 80%; object-fit: cover;">
+            <p style="font-size: 1.2rem; font-weight: bold; margin-top: 10px; color: #2E3D30;">Sparkling Wine</p>
+        </div>
+    </div>
+</section>
+
+<!-- Modal -->
+<div id="wineModal" style="display: none; position: fixed; top: -5%; left: 0; width: 100%; height: 120%; background-color: rgba(0, 0, 0, 0.8); justify-content: center; align-items: center;">
+    <div class="modal-content" style="background-color: #E3CDA8; color: #000; padding: 20px; border-radius: 10px; text-align: center;">
+        <img id="modalImage" src="" alt="Wine" style="width: 300px; height: 400px; object-fit: cover;">
+        <h2 id="modalTitle"></h2>
+        <p id="modalDescription" style="font-size: 1rem; color: #2E3D30 ; margin-top: 10px;"></p>
+        <button class="close-btn" onclick="closeModal()" style="background-color: red; color: white; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px;">Close</button>
+    </div>
+</div>
+
+<!-- Link to JavaScript -->
+<script src="script.js"></script>
+
+        </div>
+    </section>  
+
+   <!-- Footer -->
+<footer style="background-color: #5E0B15; color: #E3CDA8; padding: 10px 20px; text-align: center; font-size: 1rem;">
+    <div class="footer-content" style="max-width: 800px; margin: 0 auto;">
+        <div class="contact-info">
+            <p style="margin: 5px 0; font-size: 1rem;"><strong>Contact Us:</strong></p>
+            <p style="margin: 5px 0; font-size: 1rem;">Email: 
+                <a href="mailto:info@lechateauduvin.com" style="color: #E3CDA8; text-decoration: none; transition: color 0.3s ease-in-out;" 
+                onmouseover="this.style.color='#D4AF37'" onmouseout="this.style.color='#E3CDA8'">info@lechateauduvin.com</a>
+            </p>
+            <p style="margin: 5px 0; font-size: 1rem;">Phone: 
+                <a href="tel:+1234567890" style="color: #E3CDA8; text-decoration: none; transition: color 0.3s ease-in-out;" 
+                onmouseover="this.style.color='#D4AF37'" onmouseout="this.style.color='#E3CDA8'">+1 (234) 567-890</a>
+            </p>
+            <p style="margin: 5px 0; font-size: 1rem;">Location: 123 Vineyard Lane, Bordeaux, France</p>
+        </div>
+
+        <p style="font-size: 0.9rem; margin-top: 15px; line-height: 1.8;">&copy; 2025 Le Château du Vin. Website design by Olivia-Roberta Elikplim Afi Dogbey. This is a school project.</p>
+    </div>
+
+    <div class="social-media" style="margin-top: 15px;">
+        <p style="margin-bottom: 10px;"><strong>Follow Us:</strong></p>
+        <a href="https://www.facebook.com" target="_blank" 
+           style="color: #E3CDA8; font-size: 1.5rem; margin: 0 10px; display: inline-block; text-decoration: none;"
+           onmouseover="this.style.color='#D4AF37'" onmouseout="this.style.color='#E3CDA8'">
+            <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com" target="_blank" 
+           style="color: #E3CDA8; font-size: 1.5rem; margin: 0 10px; display: inline-block; text-decoration: none;"
+           onmouseover="this.style.color='#D4AF37'" onmouseout="this.style.color='#E3CDA8'">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.twitter.com" target="_blank" 
+           style="color: #E3CDA8; font-size: 1.5rem; margin: 0 10px; display: inline-block; text-decoration: none;"
+           onmouseover="this.style.color='#D4AF37'" onmouseout="this.style.color='#E3CDA8'">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.linkedin.com" target="_blank" 
+           style="color: #E3CDA8; font-size: 1.5rem; margin: 0 10px; display: inline-block; text-decoration: none;"
+           onmouseover="this.style.color='#D4AF37'" onmouseout="this.style.color='#E3CDA8'">
+            <i class="fab fa-linkedin"></i>
+        </a>
+    </div>
+</footer>
+

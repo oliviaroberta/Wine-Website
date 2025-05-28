@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="register.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <a class="logo">Le Château du Vin</a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Wines.html">Wines</a></li>
+        <li><a href="Audio Experience.html">Audio Experience</a></li>
+        <li><a href="Cinematic Elegance.html">Cinematic Elegance</a></li>
+        <li><a href="About Me.html">About</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+  <h2>Registration Form</h2>
+  <form method="POST" action="register.php" autocomplete="off">
+    <label>Name:</label>
+    <input type="text" name="name" required  autocomplete="off">
+
+    <label>Email:</label>
+    <input type="email" name="email" required  autocomplete="off">
+
+    <label>Phone Number:</label>
+    <select name="country_code" required  autocomplete="off">
+      <option value="+1">+1 (USA)</option>
+      <option value="+44">+44 (UK)</option>
+      <option value="+233">+233 (Ghana)</option>
+      <option value="+234">+234 (Nigeria)</option>
+    </select>
+    <input type="tel" name="phone_number" required  autocomplete="off">
+
+    <label>Date of Birth:</label>
+    <input type="date" name="dob" required  autocomplete="off">
+
+    <label>Gender:</label>
+    <select name="gender" required>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <label>Country:</label>
+    <select name="country" required autocomplete="off">
+      <option value="USA">USA</option>
+      <option value="UK">UK</option>
+      <option value="Ghana">Ghana</option>
+      <option value="Nigeria">Nigeria</option>
+    </select>
+
+    <label>Create Password:</label>
+    <input type="password" name="password" required>
+
+    <label>Favorite Wine:</label>
+    <input type="text" name="favorite_wine" required  autocomplete="off">
+
+    <label>Comments:</label>
+    <textarea name="comments"></textarea>
+
+    <button type="submit">Register</button>
+  </form>
+  </main>
+
+    <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="contact-info">
+        <p><strong>Contact Me:</strong></p>
+        <p>Email: <a href="mailto:info@lechateauduvin.com">info@lechateauduvin.com</a></p>
+        <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+        <p>Location: 123 Vineyard Lane, Bordeaux, France</p>
+        <p>&copy; 2025 Le Château du Vin. Website design by Olivia-Roberta Elikplim Afi Dogbey. This is a school project.</p>
+      </div>
+
+      <div class="social-media">
+        <p><strong>Follow Me:</strong></p>
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
