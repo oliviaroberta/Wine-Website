@@ -1,5 +1,5 @@
 <?php
-// Step 1: Connect to the database
+//  Connect to the database
 $host = 'localhost';
 $db = 'registration_db';
 $user = 'root';
@@ -7,12 +7,11 @@ $pass = '';
 
 $conn = new mysqli($host, $user, $pass, $db);
 
-// Step 2: Check connection
+// Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-
-// Step 3: Validate and sanitize form inputs
+ 
 $errors = [];
 
 function sanitize($data, $conn) {
@@ -59,13 +58,13 @@ if (empty($country)) {
     $errors[] = "Country is required.";
 }
 
-// Optional: check if email is already registered
+
 $checkEmail = $conn->query("SELECT id FROM users WHERE email = '$email'");
 if ($checkEmail && $checkEmail->num_rows > 0) {
     $errors[] = "Email is already registered.";
 }
 
-// If there are errors, stop and display them
+
 if (!empty($errors)) {
     echo "<h3>There were some problems with your registration:</h3><ul>";
     foreach ($errors as $error) {
@@ -76,10 +75,9 @@ if (!empty($errors)) {
     exit();
 }
 
-// Step 5: Hash the password
+
 $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
-// Step 6: Insert into database
 $sql = "INSERT INTO users (name, email, country_code, phone_number, dob, gender, country, password, favorite_wine, comments)
         VALUES ('$name', '$email', '$country_code', '$phone', '$dob', '$gender', '$country', '$hashed_password', '$favorite_wine', '$comments')";
 
