@@ -70,7 +70,7 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    background: url('Hero\ picture 5.jpg') center/cover no-repeat;
+    background: url('hero picture 5.jpg') center/cover no-repeat;
     background-size: cover;
     height: 100vh;
     display: flex;
